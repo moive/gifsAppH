@@ -14,6 +14,7 @@ export class GifsService {
 
   searchGifs(query: string): void {
     /* !this._history.includes(query) sino lo incluye que lo agregue*/
+    query = query.trim().toLowerCase();
     if (!this._history.includes(query)) {
       this._history.unshift(query);
       this._history = this._history.splice(0, 10);
