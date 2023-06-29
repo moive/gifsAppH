@@ -3,9 +3,10 @@ import { CommonModule } from '@angular/common';
 import { GifsPageComponent } from './gifs-page/gifs-page.component';
 import { SearchComponent } from './search/search.component';
 import { ResultComponent } from './result/result.component';
+import { GifsCardComponent } from './gifs-card/gifs-card.component';
 
 @NgModule({
-  declarations: [GifsPageComponent, SearchComponent, ResultComponent],
+  declarations: [GifsPageComponent, SearchComponent, ResultComponent, GifsCardComponent],
   imports: [CommonModule],
   exports: [GifsPageComponent],
 })
